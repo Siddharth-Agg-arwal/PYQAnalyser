@@ -1,0 +1,15 @@
+Question,Predicted_Chapter,Question_Length
+(a)  List different types of inheritance with their syntax. Draw suitable diagrams for each type. ( 4 marks) ,Chapter 3,109
+(b)  Explain the working of copy constructor with suitable example (1 mark).,Chapter 3,76
+"(a)  In the given code perform following tasks. (2 marks) i. Fill the line 24 and ii. Fill the line 27 to initialize static variable with value 1 before object creation. 1. #include<iostream> 2. using namespace std; 3. class Test{ 4. static int i; 5. int num; 6. public: 7. void static getvalue(int); 8. Test(int x) 9. { 10. num=x; 11. } 12. void show() 13. 14. cout<<""i=""<<i<<endl; 15. cout<<""num=""<<num<<endl; 16. 17. ; 18. void Test :: getvalue(int x) 19. 20. 1 = x; 21. i++; 22. cout<<i<<endl; 23. 24. 2 5 . int main ",Chapter 3,521
+( )  26. 27. 28. Test T1 (10) ; 29. T1 . show ,Chapter 3,46
+( )  ; 30. Q3 ,Chapter 10,14
+"(b)  Write a program in C++ having the following properties: (3 marks) • Define a class having two data variables of integer type in private scope. • Array of objects should be declared in main function dynamically (using new operator) • Input the data variables using a member function named as void set_data() in public scope. • Increment the values of data variables by one using a member function named void update_data() in public scope having array of object as an argument. • For displaying the updated value of data variables, create a member function named as void output() in public scope.",Chapter 10,599
+"(a)  A parameterized constructor should be defined to initialize data members. Personld should be input by the user, whereas step count and stair_count if not known may be set as 0 using constructors with default arguments. ",Chapter 10,224
+(b)  A member function incrementCount(int n) to be defined outside the class that increment the step_count and stair_count by the value n. i.e. step_count = step_count + n; stair_count = stair_count + n; ,Chapter 10,204
+(c)  A non-member function convertStep() should be provided that converts stair_count to step_count (Assuming I stair_count = 2 step_count). ,Chapter 10,141
+(d)  A displayCount0 function should be provided that displays the Personld and updated step_count (after increment and conversion of stair_count to step_count). ,Chapter 3,162
+"(e)  In addition, the class must use array of objects for creating the objects and track how many Tracker objects are created. A means for querying this count should be provided. The code must not use any global variables. (Hint: Use static members and static functions to display the count of Tracker objects.)",Chapter 10,311
+(a)  Namespace (2 marks) ,Chapter 3,25
+(b)  Encapsulation (1 mark) ,Chapter 3,28
+(c)  Advantages of static member functions (2 marks),Chapter 3,52

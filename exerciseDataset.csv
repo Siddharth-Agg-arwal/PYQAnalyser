@@ -1,0 +1,172 @@
+,Chapter,Question
+0,Chapter 415605,"16. The first three enumerators of an enum type are normally represented by the values _________ ,_________ ,and _________ ."
+1,Chapter 415605,"17. Write a statement that declares an enumeration called speeds with the enumerators obsolete ,single ,and album . Give these three names the integer values 78, 45, and 33.Structures 4STRUCTURES15705 3087 CH04 11/29/01 2:23 PM Page 157"
+2,Chapter 415605,"18. State the reason that enum isWord{ NO, YES }; is better than enum isWord{ YES, NO }; Exercises Answers to the starred exercises can be found in"
+3,Chapter 625607,6. 9. Member functions defined inside a class definition are ________ by default.
+4,Chapter 625607,10. Write a member function called getcrow() for the leverage class described in Question
+5,Chapter 625607,4. This function should return the value of the crowbar data. Assume the function is defined within the class definition.
+6,Chapter 625607,"11. A constructor is executed automatically when an object is ________.12. A constructor’s name is the same as _________.13. Write a constructor that initializes to 0 the crowbar data, a member of the leverage class described in Question 4. Assume that the constructor is defined within the class defini- tion."
+7,Chapter 625607,14. True or false: In a class you can have more than one constructor with the same name.
+8,Chapter 625607,15. A member function can always access the data a. in the object of which it is a member. b. in the class of which it is a member. c. in any object of the class of which it is a member. d. in the public part of its class.
+9,Chapter 625607,16. Assume that the member function getcrow() described in Question 10 is defined outside the class definition. Write the declaration that goes inside the class definition.
+10,Chapter 942410,"5. Derive a class called employee2 from the employee class in the EMPLOY program in this chapter. This new class should add a type double data item called compensation ,and also an enum type called period to indicate whether the employee is paid hourly, weekly, or monthly. For simplicity you can change the manager ,scientist ,and laborer classes so they are derived from employee2 instead of employee . However, note that in many circumstances it might be more in the spirit of OOP to create a separate base class called compensation and three new classes manager2 ,scientist2 ,and laborer2 ,and use multiple inheritance to derive these three classes from the original manager ,scientist , andlaborer classes and from compensation . This way none of the original classes needs to be modified."
+11,Chapter 942410,6. Start with the ARROVER 3 program in
+12,Chapter 1262813,8. Starting with the LINKLIST program in
+13,Chapter 1,"1. procedural, object-oriented"
+14,Chapter 1,"2. b3. data, act on that data4. a5. data hiding6. a, d7. objects8. false; the organizational principles are different9. encapsulation"
+15,Chapter 1,10. d
+16,Chapter 1,"11. false; most lines of code are the same in C and C++12. polymorphism13. d14. b15. b, d"
+17,Chapter 2,"1. b, c2. parentheses3. braces { }4. It’s the first function executed when the program starts"
+18,Chapter 2,5. statement
+19,Chapter 2,6. // this is a comment /* this is a comment */
+20,Chapter 2,"7. a, d24 3087 App G 11/29/01 2:22 PM Page 914"
+21,Chapter 2,8. a. 4 b. 10 c. 4d. 4
+22,Chapter 2,9. false
+23,Chapter 2,10. a. integer constant b. character constant c. floating-point constantd. variable name or identifiere. function name
+24,Chapter 2,11. a. cout << ‘x’; b. cout << “Jim”; c.cout << 509;
+25,Chapter 2,12. false; they’re not equal until the statement is executed13. cout << setw(10) << george;
+26,Chapter 2,14. IOSTREAM
+27,Chapter 2,16. IOMANIP
+28,Chapter 2,"17. string constants, preprocessor directives18. true19. 220. assignment ( =) and arithmetic (like +and*)"
+29,Chapter 2,21. temp += 23; temp = temp + 23;
+30,Chapter 2,22. 1
+31,Chapter 2,23. 2020
+32,Chapter 2,"24. to provide declarations and other data for library functions, overloaded operators, and objects"
+33,Chapter 2,25. libraryAnswers to Questions and Exercises GANSWERS TO QUESTIONS AND EXERCISES91524 3087 App G 11/29/01 2:22 PM Page 915 Solutions to Exercises
+34,Chapter 2,"1. // ex2_1.cpp // converts gallons to cubic feet#include <iostream>using namespace std; int main() { float gallons, cufeet; cout << “\nEnter quantity in gallons: “; cin >> gallons;cufeet = gallons / 7.481;cout << “Equivalent in cublic feet is “ << cufeet << endl;return 0;}"
+35,Chapter 2,2. // ex2_2.cpp// generates table#include <iostream>#include <iomanip>using namespace std; int main() { cout << 1990 << setw(8) << 135 << endl << 1991 << setw(8) << 7290 << endl<< 1992 << setw(8) << 11300 << endl<< 1993 << setw(8) << 16200 << endl; return 0;}
+36,Chapter 2,3. // ex2_3.cpp// exercises arithmetic assignment and decrement#include <iostream>using namespace std; int main() { int var = 10;
+37,Chapter 3,"1. b, c"
+38,Chapter 3,"3. –1 is true; only 0 is false.4. The initialize expression initializes the loop variable, the test expression tests the loop variable, and the increment expression changes the loop variable."
+39,Chapter 3,"5. c, d6. true7. for(int j=100; j<=110; j++) cout << endl << j;"
+40,Chapter 3,8. braces (curly brackets)9. c
+41,Chapter 3,10. int j = 100; while( j <= 110 ) cout << endl << j++;
+42,Chapter 3,11. false
+43,Chapter 3,12. at least once13. int j = 100; do cout << endl << j++; while( j <= 110 );
+44,Chapter 3,14. if(age > 21) cout << “Yes”;
+45,Chapter 3,15. dAnswers to Questions and Exercises GANSWERS TO QUESTIONS AND EXERCISES91724 3087 App G 11/29/01 2:22 PM Page 917
+46,Chapter 3,16. if( age > 21 ) cout << “Yes”; else cout << “No”;
+47,Chapter 3,"17. a, c"
+48,Chapter 3,"19. preceding, surrounded by braces20. reformatting"
+49,Chapter 3,21. switch(ch) {case ‘y’: cout << “Yes”;break; case ‘n’: cout << “No”;break; default: cout << “Unknown response”; }
+50,Chapter 3,23. d
+51,Chapter 3,"25. unary, arithmetic, relational, logical, conditional, assignment26. d"
+52,Chapter 3,27. the top of the loop28. b Solutions to Exercises
+53,Chapter 3,1. // ex3_1.cpp // displays multiples of a number#include <iostream>#include <iomanip> //for setw()using namespace std; int main() {
+54,Chapter 3,3. // ex3_3.cpp // makes a number out of digits#include <iostream>using namespace std;#include <conio.h> //for getche() int main() { char ch;unsigned long total = 0; //this holds the number cout << “\nEnter a number: “; while( (ch=getche()) != ‘\r’ ) //quit on Enter total = total*10 + ch-’0’; //add digit to total*10 cout << “\nNumber is: “ << total << endl;return 0;}
+55,Chapter 3,"4. // ex3_4.cpp// models four-function calculator#include <iostream>using namespace std; int main() { double n1, n2, ans;char oper, ch; do { cout << “\nEnter first number, operator, second number: “; cin >> n1 >> oper >> n2;switch(oper) {case ‘+’: ans = n1 + n2; break;case ‘-’: ans = n1 - n2; break;case ‘*’: ans = n1 * n2; break;case ‘/’: ans = n1 / n2; break;default: ans = 0;} cout << “Answer = “ << ans;cout << “\nDo another (Enter ‘y’ or ‘n’)? “;cin >> ch;} while( ch != ‘n’ ); return 0;}"
+56,Chapter 4,"1. b, d"
+57,Chapter 4,2. true3. semicolon4. struct time { int hrs;int mins;int secs;};
+58,Chapter 4,5. false; only a variable definition creates space in memory
+59,Chapter 4,6. c7. time2.hrs = 11;
+60,Chapter 4,"8. 18 in 16-bit systems (3 structures times 3 integers times 2 bytes), or 36 in 32-bit systems9. time time1 = { 11, 10, 59 };"
+61,Chapter 4,10. true11. temp = fido.dogs.paw;
+62,Chapter 4,"12. c13. enum players { B1, B2, SS, B3, RF, CF, LF, P, C };"
+63,Chapter 4,"14. players joe, tom; joe = LF;tom = P;"
+64,Chapter 4,15. a. no b. yes c. no d. yes
+65,Chapter 4,"16. 0, 1, 217. enum speeds { obsolete=78, single=45, album=33 };"
+66,Chapter 4,18. because false should be represented by 0Answers to Questions and Exercises GANSWERS TO QUESTIONS AND EXERCISES92124 3087 App G 11/29/01 2:22 PM Page 921 Solutions to Exercises
+67,Chapter 4,"1. // ex4_1.cpp // uses structure to store phone number#include <iostream>using namespace std;////////////////////////////////////////////////////////////////struct phone {int area; //area code (3 digits)int exchange; //exchange (3 digits)int number; //number (4 digits)}; ////////////////////////////////////////////////////////////////int main() {phone ph1 = { 212, 767, 8900 }; //initialize phone numberphone ph2; //define phone number // get phone no from user cout << “\nEnter your area code, exchange, and number”;cout << “\n(Don’t use leading zeros): “;cin >> ph2.area >> ph2.exchange >> ph2.number; cout << “\nMy number is “ //display numbers << ‘(‘ << ph1.area << “) “ << ph1.exchange << ‘-’ << ph1.number; cout << “\nYour number is “ << ‘(‘ << ph2.area << “) “<< ph2.exchange << ‘-’ << ph2.number << endl; return 0;}"
+68,Chapter 4,2. // ex4_2.cpp// structure models point on the plane#include <iostream>using namespace std;////////////////////////////////////////////////////////////////struct point {int xCo; //X coordinateint yCo; //Y coordinate}; ////////////////////////////////////////////////////////////////
+69,Chapter 5,1. d (half credit for b)
+70,Chapter 5,2. definition3. void foo() { cout << “foo”;}
+71,Chapter 5,"4. declaration, prototype"
+72,Chapter 5,5. body6. call7. declarator8. c9. false
+73,Chapter 5,"10. To clarify the purpose of the arguments11. a, b, c12. Empty parentheses mean the function takes no arguments13. one14. Ttrue15. at the beginning of the declaration and declarator16. void"
+74,Chapter 5,17. main() { int times2(int); // prototypeint alpha = times2(37); // function call}
+75,Chapter 5,18. d
+76,Chapter 5,"19. to modify the original argument (or to avoid copying a large argument)20. a, c21. int bar(char); int bar(char, char);"
+77,Chapter 5,1. // ex5_1.cpp // function finds area of circle#include <iostream>using namespace std;float circarea(float radius); int main() { double rad;cout << “\nEnter radius of circle: “;cin >> rad;cout << “Area is “ << circarea(rad) << endl;return 0;} //--------------------------------------------------------------float circarea(float r) {const float PI = 3.14159F;return r * r * PI;}
+78,Chapter 5,"2. // ex5_2.cpp// function raises number to a power#include <iostream>using namespace std;double power( double n, int p=2); //p has default value 2Answers to Questions and Exercises GANSWERS TO QUESTIONS AND EXERCISES92524 3087 App G 11/29/01 2:22 PM Page 925 int main() { double number, answer;int pow;char yeserno; cout << “\nEnter number: “; //get number cin >> number;cout << “Want to enter a power (y/n)? “;cin >> yeserno;if( yeserno == ‘y’ ) //user wants a non-2 power? {cout << “Enter power: “;cin >> pow;answer = power(number, pow); //raise number to pow} else answer = power(number); //square the number cout << “Answer is “ << answer << endl;return 0;} //--------------------------------------------------------------// power()// returns number n raised to a power pdouble power( double n, int p ) {double result = 1.0; //start with 1for(int j=0; j<p; j++) //multiply by n result *= n; //p times return result;}"
+79,Chapter 5,"3. // ex5_3.cpp// function sets smaller of two numbers to 0#include <iostream>using namespace std; int main() { void zeroSmaller(int&, int&);int a=4, b=7, c=11, d=9; zeroSmaller(a, b); zeroSmaller(c, d);"
+80,Chapter 6,1. A class declaration describes how objects of a class will look when they are created.
+81,Chapter 6,"2. class, object3. c4. class leverage { private: int crowbar; public: void pry(); };"
+82,Chapter 6,5. false; both data and functions can be private or public
+83,Chapter 6,7. d8. lever1.pry();
+84,Chapter 6,"1. // ex6_1.cpp // uses a class to model an integer data type#include <iostream>using namespace std;////////////////////////////////////////////////////////////////class Int //(not the same as int) {private: int i; public: Int() //create an Int { i = 0; }Answers to Questions and Exercises GANSWERS TO QUESTIONS AND EXERCISES92924 3087 App G 11/29/01 2:22 PM Page 929 Int(int ii) //create and initialize an Int { i = ii; } void add(Int i2, Int i3) //add two Ints { i = i2.i + i3.i; } void display() //display an Int { cout << i; } }; //////////////////////////////////////////////////////////////// int main() {Int Int1(7); //create and initialize an IntInt Int2(11); //create and initialize an IntInt Int3; //create an Int Int3.add(Int1, Int2); //add two Ints cout << “\nInt3 = “; Int3.display(); //display resultcout << endl;return 0;}"
+85,Chapter 6,"2. // ex6_2.cpp// uses class to model toll booth#include <iostream>using namespace std;#include <conio.h> const char ESC = 27; //escape key ASCII code const double TOLL = 0.5; //toll is 50 cents////////////////////////////////////////////////////////////////class tollBooth {private: unsigned int totalCars; //total cars passed todaydouble totalCash; //total money collected today public: //constructor tollBooth() : totalCars(0), totalCash(0.0) { } void payingCar() //a car paid { totalCars++; totalCash += TOLL; } void nopayCar() //a car didn’t pay { totalCars++; } void display() const //display totals { cout << “\nCars=” << totalCars << “, cash=” << totalCash<< endl; } };"
+86,Chapter 7,1. d
+87,Chapter 7,2. same3. double doubleArray[100];
+88,Chapter 7,"4. 0, 95. cout << doubleArray[j];"
+89,Chapter 7,"6. c7. int coins[] = { 1, 5, 10, 25, 50, 100 };"
+90,Chapter 7,8. d9. twoD[2][4]
+91,Chapter 7,"10. true11. float flarr[3][3] = { {52,27,83}, {94,73,49}, {3,6,1} };"
+92,Chapter 7,"12. memory address13. a, d14. an array with 1000 elements of structure or class employee"
+93,Chapter 7,16. d
+94,Chapter 7,"1. // ex7_1.cpp // reverses a C-string#include <iostream>#include <cstring> //for strlen()using namespace std; int main() { void reversit( char[] ); //prototypeconst int MAX = 80; //array sizechar str[MAX]; //string cout << “\nEnter a string: “; //get string from user cin.get(str, MAX);Answers to Questions and Exercises GANSWERS TO QUESTIONS AND EXERCISES93324 3087 App G 11/29/01 2:22 PM Page 933 reversit(str); //reverse the string cout << “Reversed string is: “; //display it cout << str << endl;return 0;} //--------------------------------------------------------------//reversit()//function to reverse a string passed to it as an argumentvoid reversit( char s[] ) {int len = strlen(s); //find length of stringfor(int j = 0; j < len/2; j++) //swap each character { // in first halfchar temp = s[j]; // with characters[j] = s[len-j-1]; // in second halfs[len-j-1] = temp;} } // reversit()// function to reverse a string passed to it as an argumentvoid reversit( char s[] ) {int len = strlen(s); // find length of stringfor(int j = 0; j < len/2; j++) // swap each character { // in first halfchar temp = s[j]; // with characters[j] = s[len-j-1]; // in second halfs[len-j-1] = temp;} }"
+95,Chapter 7,2. // ex7_2.cpp// employee object uses a string as data#include <iostream>#include <string>using namespace std;////////////////////////////////////////////////////////////////class employee {private: string name;long number;
+96,Chapter 8,"1. a, c"
+97,Chapter 8,4. true5. void operator -- () { count--; }
+98,Chapter 8,"6. none7. b, d8. void Distance::operator ++ () { ++feet;}"
+99,Chapter 8,"9. Distance Distance::operator ++ () {int f = ++feet;float i = inches;return Distance(f, i);}Answers to Questions and Exercises GANSWERS TO QUESTIONS AND EXERCISES93724 3087 App G 11/29/01 2:22 PM Page 937"
+100,Chapter 8,"10. It increments the variable prior to use, the same as a non-overloaded ++operator."
+101,Chapter 8,"11. c, e, b, a, d12. true13. b, c14. String String::operator ++ () { int len = strlen(str);for(int j=0; j<len; j++) str[j] = toupper( str[j] ) return String(str);}"
+102,Chapter 8,15. d
+103,Chapter 8,16. false if there is a conversion routine; true otherwise17. b18. true
+104,Chapter 8,19. constructor
+105,Chapter 8,"20. true, but it will be hard for humans to understand21. d22. attributes, operations23. false24. a Solutions to Exercises"
+106,Chapter 8,"1. // ex8_1.cpp // overloaded ‘-’ operator subtracts two Distances#include <iostream>using namespace std;////////////////////////////////////////////////////////////////class Distance //English Distance class {private: int feet;float inches; public: //constructor (no args) Distance() : feet(0), inches(0.0) { } //constructor (two args)"
+107,Chapter 8,"2. // ex8_2.cpp// overloaded ‘+=’ operator concatenates strings#include <iostream>#include <cstring> //for strcpy(), strlen()using namespace std;#include <process.h> //for exit()////////////////////////////////////////////////////////////////class String //user-defined string type {private: enum { SZ = 80 }; //size of String objectschar str[SZ]; //holds a C-string public: String() //no-arg constructor { strcpy(str, “”); } String( char s[] ) //1-arg constructor { strcpy(str, s); } void display() //display the String { cout << str; } String operator += (String ss) //add a String to this one { //result stays in this oneif( strlen(str) + strlen(ss.str) >= SZ ) { cout << “\nString overflow”; exit(1); } strcat(str, ss.str); //add the argument stringreturn String(str); //return temp String} }; ////////////////////////////////////////////////////////////////int main() {String s1 = “Merry Christmas! “; //uses 1-arg ctorString s2 = “Happy new year!”; //uses 1-arg ctorString s3; //uses no-arg ctor"
+108,Chapter 8,4. // ex8_4.cpp// overloaded arithmetic operators work with type Int#include <iostream>using namespace std;#include <process.h> //for exit()////////////////////////////////////////////////////////////////class Int {private: int i; public: Int() : i(0) //no-arg constructor { } Int(int ii) : i(ii) //1-arg constructor { } // (int to Int) void putInt() //display Int { cout << i; } void getInt() //read Int from kbd { cin >> i; } operator int() //conversion operator { return i; } // (Int to int) Int operator + (Int i2) //addition { return checkit( long double(i)+long double(i2) ); } Int operator - (Int i2) //subtraction { return checkit( long double(i)-long double(i2) ); } Int operator * (Int i2) //multiplication { return checkit( long double(i)*long double(i2) ); } Int operator / (Int i2) //division { return checkit( long double(i)/long double(i2) ); } Int checkit(long double answer) //check results {if( answer > 2147483647.0L || answer < -2147483647.0L ) { cout << “\nOverflow Error\n”; exit(1); } return Int( int(answer) );} }; ////////////////////////////////////////////////////////////////int main() {
+109,Chapter 9,"1. a, c"
+110,Chapter 9,"2. derived3. b, c, d4. class Bosworth : public Alphonso"
+111,Chapter 9,5. false6. protected
+112,Chapter 9,7. yes (assuming basefunc is not private)
+113,Chapter 9,9. true
+114,Chapter 9,10. the one in the derived class11. Bosworth() : Alphonso() { }
+115,Chapter 9,"12. c, d13. true14. Derv(int arg) : Base(arg)Answers to Questions and Exercises GANSWERS TO QUESTIONS AND EXERCISES94324 3087 App G 11/29/01 2:22 PM Page 943"
+116,Chapter 9,15. a
+117,Chapter 9,"16. true17. c18. class Tire : public Wheel, public Rubber"
+118,Chapter 9,20. false21. generalization
+119,Chapter 9,22. d
+120,Chapter 9,"23. false24. stronger, aggregation Solutions to Exercises"
+121,Chapter 9,1. // ex9_1.cpp // publication class and derived classes#include <iostream>#include <string>using namespace std;////////////////////////////////////////////////////////////////class publication // base class {private: string title;float price; public: void getdata() {cout << “\nEnter title: “; cin >> title;cout << “Enter price: “; cin >> price;} void putdata() const {cout << “\nTitle: “ << title;cout << “\nPrice: “ << price;} }; ////////////////////////////////////////////////////////////////class book : private publication // derived class {private: int pages;
+122,Chapter 10,2. 4 bytes
+123,Chapter 10,"3. c4. &var ,*var ,var& ,char*"
+124,Chapter 10,5. constant; variable6. float* ptrtofloat ;
+125,Chapter 10,7. name8. *testptr
+126,Chapter 10,9. pointer to; contents of the variable pointed to by
+127,Chapter 10,"10. b, c, d11. No. The address &intvar must be placed in the pointer intptr before it can be accessed."
+128,Chapter 10,12. any data type13. They both do the same thing.14. for(int j=0; j<77; j++) cout << endl << *(intarr+j);
+129,Chapter 10,"15. because array names represent the address of the array, which is a constant and can’t be changed"
+130,Chapter 10,16. reference; pointerAnswers to Questions and Exercises GANSWERS TO QUESTIONS AND EXERCISES94924 3087 App G 11/29/01 2:22 PM Page 949
+131,Chapter 10,"17. a, d"
+132,Chapter 10,19. for(int j=0; j<80; j++) *s2++ = *s1++;
+133,Chapter 10,20. b21. char* revstr(char*);
+134,Chapter 10,"23. a, c24. wasted25. memory that is no longer needed26. p->exclu();"
+135,Chapter 10,"28. a, c29. float* arr[8];"
+136,Chapter 10,30. b31. 0..9 at one end; 3..* at the other32. b33. false34. a Solutions to Exercises
+137,Chapter 10,1. // ex10_1.cpp // finds average of numbers typed by user#include <iostream>using namespace std; int main() { float flarr[100]; //array for numberschar ch; //user decisionint num = 0; //counts numbers inputdo {
+138,Chapter 10,"3. // ex10_3.cpp// sort an array of pointers to strings#include <iostream>#include <cstring> //for strcmp(), etc.using namespace std;const int DAYS = 7; //number of pointers in array int main() { void bsort(char**, int); //prototype //array of pointers to char char* arrptrs[DAYS] = { “Sunday”, “Monday”, “Tuesday”, “Wednesday”, “Thursday”,“Friday”, “Saturday” }; cout << “\nUnsorted:\n”;for(int j=0; j<DAYS; j++) //display unsorted strings cout << *(arrptrs+j) << endl; bsort(arrptrs, DAYS); //sort the strings cout << “\nSorted:\n”; for(j=0; j<DAYS; j++) //display sorted strings cout << *(arrptrs+j) << endl; return 0;} //--------------------------------------------------------------void bsort(char** pp, int n) //sort pointers to strings {"
+139,Chapter 11,1. d
+140,Chapter 11,2. true
+141,Chapter 11,1. // ex11_1.cpp // publication class and derived classes#include <iostream>#include <string>using namespace std;////////////////////////////////////////////////////////////////class publication {private: string title;float price; public: virtual void getdata() {cout << “\nEnter title: “; cin >> title;cout << “Enter price: “; cin >> price;} virtual void putdata() {cout << “\n\nTitle: “ << title;cout << “\nPrice: “ << price;} }; ////////////////////////////////////////////////////////////////class book : public publication {private: int pages; public: void getdata() {publication::getdata();cout << “Enter number of pages: “; cin >> pages;} void putdata() {publication::putdata();cout << “\nPages: “ << pages;} }; ////////////////////////////////////////////////////////////////class tape : public publication {
+142,Chapter 12,"1. b, c"
+143,Chapter 12,5. true6. if(foobar)
+144,Chapter 12,7. d8. fileOut.put(ch); (where ch is the character)
+145,Chapter 12,9. c
+146,Chapter 12,"11. a, b, d12. the byte location at which the next read or write operation will take place13. false; file pointer can be a synonym for current position14. f1.seekg(-13, ios::cur);"
+147,Chapter 12,"1. // ex12_1.cpp // write array#include <iostream>#include <fstream> // for file streamsusing namespace std;////////////////////////////////////////////////////////////////class Distance // English Distance class {private: int feet;float inches; public: Distance() : feet(0), inches(0.0) // constructor (no args) { } // constructor (two args) Distance(int ft, float in) : feet(ft), inches(in) { } void getdist() // get length from user {cout << “\n Enter feet: “; cin >> feet;cout << “ Enter inches: “; cin >> inches;} void showdist() // display distance { cout << feet << “\’-” << inches << ‘\”’; } }; ////////////////////////////////////////////////////////////////int main() {char ch;Distance dist; // create a Distance objectfstream file; // create input/output file // open it for append file.open(“DIST.DAT”, ios::binary | ios::app | ios::out | ios::in );Answers to Questions and Exercises GANSWERS TO QUESTIONS AND EXERCISES96124 3087 App G 11/29/01 2:22 PM Page 961 do // data from user to file { cout << “\nDistance”;dist.getdist(); // get a distance // write to file file.write( (char*)&dist, sizeof(dist) );cout << “Enter another distance (y/n)? “;cin >> ch;} while(ch==’y’); // quit on ‘n’ file.seekg(0); // reset to start of file // read first distance file.read( (char*)&dist, sizeof(dist) ); int count = 0;while( !file.eof() ) // quit on EOF {cout << “\nDistance “ << ++count << “: “; // display distdist.showdist();file.read( (char*)&dist, sizeof(dist) ); // read another} // distance cout << endl;return 0;}"
+148,Chapter 12,"2. // ex12_2.cpp// imitates COPY command#include <fstream> //for file functions#include <iostream>using namespace std;#include <process.h> //for exit() int main(int argc, char* argv[] ) { if( argc != 3 ) { cerr << “\nFormat: ocopy srcfile destfile”; exit(-1); } char ch; //character to read ifstream infile; //create file for input infile.open( argv[1] ); //open fileif( !infile ) //check for errors { cerr << “\nCan’t open “ << argv[1]; exit(-1); } ofstream outfile; //create file for outputoutfile.open( argv[2] ); //open file"
+149,Chapter 13,"1. a, b, c, d"
+150,Chapter 13,3. the compiler to compile the . CPPfile and the linker to link the resulting . OBJfiles
+151,Chapter 13,"4. a, b5. class libraryAnswers to Questions and Exercises GANSWERS TO QUESTIONS AND EXERCISES96324 3087 App G 11/29/01 2:22 PM Page 963"
+152,Chapter 13,6. true
+153,Chapter 13,"7. c, d8. true9. false"
+154,Chapter 13,"10. a, c, d11. linking12. false13. d14. scope15. object16. declared, file B17. true18. b19. false20. d21. b22. namespace22. b, d"
+155,Chapter 14,1. b and c2. class3. false; different functions are created at compile time4. template<class T> T times2(T arg) {return arg*2;}
+156,Chapter 14,5. b
+157,Chapter 14,6. true
+158,Chapter 14,7. instantiating
+159,Chapter 14,"1. // ex14_1.cpp // template used for function that averages array#include <iostream>using namespace std;Answers to Questions and Exercises GANSWERS TO QUESTIONS AND EXERCISES96524 3087 App G 11/29/01 2:22 PM Page 965 //////////////////////////////////////////////////////////////// template <class atype> //function templateatype avg(atype* array, int size) {atype total = 0;for(int j=0; j<size; j++) //average the array total += array[j]; return (atype)total/size;} ////////////////////////////////////////////////////////////////int intArray[] = {1, 3, 5, 9, 11, 13};long longArray[] = {1, 3, 5, 9, 11, 13};double doubleArray[] = {1.0, 3.0, 5.0, 9.0, 11.0, 13.0};char charArray[] = {1, 3, 5, 9, 11, 13}; int main() { cout << “\navg(intArray)=” << avg(intArray, 6);cout << “\navg(longArray)=” << avg(longArray, 6);cout << “\navg(doubleArray)=” << avg(doubleArray, 6);cout << “\navg(charArray)=” << (int)avg(charArray, 6) << endl;return 0;}"
+160,Chapter 14,2. // ex14_2.cpp// implements queue class as a template#include <iostream>using namespace std;const int MAX = 3;////////////////////////////////////////////////////////////////template <class Type>class Queue {private: Type qu[MAX]; //array of any typeint head; //index of start of queue (remove item here)int tail; //index of end of queue (insert item here) public: Queue() //constructor { head = -1; tail = -1; } void put(Type var) //insert item at queue tail {qu[++tail] = var;if(tail >=MAX-1) //wrap around if past array end tail = -1;
+161,Chapter 15,"1. a, b, d"
+162,Chapter 15,"2. vector, list, deque3. set, map4. a5. true6. c7. false8. iterator9. a function object"
+163,Chapter 15,"10. c11. false; it simply returns its value12. 3, 11Answers to Questions and Exercises GANSWERS TO QUESTIONS AND EXERCISES96924 3087 App G 11/29/01 2:22 PM Page 969"
+164,Chapter 15,13. duplicate
+165,Chapter 15,"14. b, c15. points to16. false17. bidirectional18. *iter++"
+166,Chapter 15,"19. d20. c21. true22. iterators23. it’s a string used to separate the printed values24. b25. the elements will be ordered26. true27. pairs (or associations)28. false29. a, d30. constructor Solutions to Exercises"
+167,Chapter 15,"1. // ex15_1.cpp // type float stored in array, sorted by sort()#include <iostream>#include <algorithm>using namespace std; int main() { int j=0, k;char ch;float fpn, farr[100]; do { cout << “Enter a floating point number: “; cin >> fpn;farr[j++] = fpn;"
+168,Chapter 15,4. // ex15_4.cpp// a multiset automatically sorts person objects stored by pointer#include <iostream>#include <set>#pragma warning (disable:4786)#include <string>using namespace std; class person {
+169,Chapter 16,1. false
+170,Chapter 16,"2. c, d3. task4. true5. columns6. a, c"
